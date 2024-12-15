@@ -5,18 +5,19 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class SelfDeletingApp {
 
 	public static void main(String[] args) {
-		chromeLaunch();
+		System.out.println("Hello this a test java");
+		//chromeLaunch();
 	}
 
 	public static void chromeLaunch() {
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver =  (WebDriver) new ChromeDriver();
 		driver.get("https://www.youtube.com");
 		
 		System.out.println("Youtube Launched");
